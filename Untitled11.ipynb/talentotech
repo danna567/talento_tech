@@ -1,0 +1,77 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOcOKK1XnEHZI+RBFXJEhiO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/danna567/danna/blob/main/Untitled11.ipynb/talentotech\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3apihDJlpqsA",
+        "outputId": "a4ba1418-f64b-44cc-c58d-5cf6cb7aa2a3"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "                             Nombre  Ciudad  Ranking Nacional  \\\n",
+            "0              Universidad Nacional  Bogotá                 1   \n",
+            "1          Universidad de los Andes  Bogotá                 2   \n",
+            "2  Pontificia Universidad Javeriana  Bogotá                 3   \n",
+            "3           Universidad del Rosario  Bogotá                 4   \n",
+            "\n",
+            "   Número de Estudiantes  \n",
+            "0                  50000  \n",
+            "1                  25000  \n",
+            "2                  30000  \n",
+            "3                  15000  \n"
+          ]
+        }
+      ],
+      "source": [
+        "import pandas as pd\n",
+        "\n",
+        "# Crear un diccionario con datos ficticios de universidades\n",
+        "datos_universidades = {\n",
+        "    'Nombre': ['Universidad Nacional', 'Universidad de los Andes', 'Pontificia Universidad Javeriana', 'Universidad del Rosario'],\n",
+        "    'Ciudad': ['Bogotá', 'Bogotá', 'Bogotá', 'Bogotá'],\n",
+        "    'Ranking Nacional': [1, 2, 3, 4],\n",
+        "    'Número de Estudiantes': [50000, 25000, 30000, 15000]\n",
+        "}\n",
+        "\n",
+        "# Crear un DataFrame de Pandas a partir del diccionario\n",
+        "df_universidades = pd.DataFrame(datos_universidades)\n",
+        "\n",
+        "# Mostrar la tabla\n",
+        "print(df_universidades)"
+      ]
+    }
+  ]
+}
